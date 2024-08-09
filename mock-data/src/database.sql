@@ -5,6 +5,7 @@ CREATE TABLE IF NOT EXISTS `#__spm_projects` (
 	`description` TEXT,
 	`deadline` DATETIME,
 	`category` INT(11),
+    `id_customer` INT(11),
 	`created` Timestamp DEFAULT NOW(),
 	`modified` Timestamp DEFAULT NOW(),
 	`created_by` INT(11)  NOT NULL ,
