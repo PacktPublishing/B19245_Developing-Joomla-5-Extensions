@@ -38,7 +38,7 @@ class ProjectsListHelper implements DatabaseAwareInterface
         $model->setState('list.ordering', $ordering);
         $model->setState('list.direction', '');
 
-        $model->setState('filter.customer', (int) $params->get('customers', 0));
+        $model->setState('filter.customer', (int) $params->get('customer', 0));
 
         $items = $model->getItems();
 
