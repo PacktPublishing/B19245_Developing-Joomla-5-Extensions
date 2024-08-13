@@ -37,11 +37,11 @@ class ProjectsModel extends ListModel
             )
         )->from($db->quoteName('#__spm_projects', 'a'));
 
-        $id_customer = $this->state->get('filter.customer', 0);
-        if ($id_customer) {
+        $id_customers = $this->state->get('filter.customer', []);
+        if (implode('', $id_customers)) {
             $query->where(
                 $db->quoteName('a.id_customer')
-                    . ' = ' . (int) $id_customer
+                . ' IN (' . implode(',', $id_customers) . ')'
             );
         }
 
