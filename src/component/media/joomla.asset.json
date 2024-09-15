@@ -12,12 +12,20 @@
       "uri": "com_spm/projects.css"
     },
     {
-       "name": "com_spm.validation",
+        "name": "com_spm.validation",
         "type": "script",
         "uri": "com_spm/validation-scripts.js",
         "attributes": {
             "defer": true
         }
+    },
+    {
+      "name": "com_spm.xtd-projectlinkbutton",
+      "type": "script",
+      "uri": "com_spm/xtd-projectlinkbutton.js",
+      "attributes": {
+          "defer": true
+      }
     }
   ]
 }
