@@ -42,7 +42,6 @@ class Router extends RouterView
 
     public function getProjectSegment($key, $urlQuery)
     {
-        $id = (int) $key;
         $query = $this->db->getQuery(true);
 
         $query->select($this->db->quoteName('alias'))
