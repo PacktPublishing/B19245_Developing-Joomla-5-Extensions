@@ -20,7 +20,7 @@
             <file>access.xml</file>
             <file>config.xml</file>
         </files>
-        <menu line="option=com_spm" img="class:default">COM_SPM_MENU_BACKEND</menu>
+        <menu link="option=com_spm" img="class:default">COM_SPM_MENU_BACKEND</menu>
         <submenu>
             <menu link="option=com_spm&amp;view=projects" img="default">
                     COM_SPM_PROJECTS
